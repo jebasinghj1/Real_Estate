@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@200;300;400;500;600&family=DM+Mono:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --forest-900: #0f2318;
+  --gold-400: #d9a820;
+  --cream: #f9f5ee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  color: #1c2e24;
+  font-family: 'Jost', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #2d5e3d;
+  color: #f9f5ee;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f2318;
+}
+::-webkit-scrollbar-thumb {
+  background: #d9a820;
+  border-radius: 3px;
+}
+
+/* Utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Gold underline animation */
+.gold-underline {
+  position: relative;
+  display: inline-block;
+}
+.gold-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1px;
+  background: #d9a820;
+  transition: width 0.4s ease;
+}
+.gold-underline:hover::after {
+  width: 100%;
+}
+
+/* Section fade */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Nav */
+.nav-blur {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Swiper overrides */
+.swiper-pagination-bullet {
+  background: #d9a820 !important;
+  opacity: 0.4 !important;
+  width: 6px !important;
+  height: 6px !important;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  width: 24px !important;
+  border-radius: 3px !important;
+  transition: width 0.3s ease;
+}
+
+/* Input focus */
+.field:focus {
+  outline: none;
+  border-color: #d9a820;
+  box-shadow: 0 0 0 2px rgba(217, 168, 32, 0.15);
+}
+
+/* Marquee */
+.marquee-inner {
+  display: flex;
+  gap: 0;
+  animation: marquee 35s linear infinite;
+  width: max-content;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

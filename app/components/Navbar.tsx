@@ -38,10 +38,10 @@ export default function Navbar() {
           >
             <div className="relative flex flex-col leading-none">
               <span className="font-bold text-2xl md:text-3xl text-[#1a1a1a] tracking-wide group-hover:text-[#c9a84c] transition-colors duration-500 font-serif">
-                SCAFFOLDING
+                Aranya
               </span>
               <span className="font-medium text-[10px] tracking-[0.3em] text-[#c9a84c] uppercase mt-1 group-hover:text-[#b8962a] transition-colors duration-500 font-mono">
-                Premium Rentals
+                Farms
               </span>
             </div>
           </a>

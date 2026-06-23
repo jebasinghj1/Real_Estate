@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
+import plot_1 from "../../public/images/plot_1.png"
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -13,7 +14,7 @@ const plots = [
     size: "1,800 – 3,600 sq.ft",
     price: "₹1 Cr",
     tag: "Entry",
-    img: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80",
+     img: "/images/plot_1.png",
     features: ["Tree-lined boundary", "Corner plots available"],
     label: "Luxury Villa with Garden"
   },
@@ -22,7 +23,7 @@ const plots = [
     size: "3,601 – 7,200 sq.ft",
     price: "₹2.4 Cr",
     tag: "Popular",
-    img: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
+    img: "/images/plot_2.png",
     features: ["Park-facing options", "Wide 30ft road access"],
     featured: true,
     label: "Modern Villa with Pool"
@@ -32,7 +33,7 @@ const plots = [
     size: "7,201 – 10,800 sq.ft",
     price: "₹4.8 Cr",
     tag: "Exclusive",
-    img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+    img: "/images/plot_3.png",
     features: ["Private garden zone", "Pond-view orientation"],
     label: "Villa Amidst Nature"
   },
@@ -201,7 +202,7 @@ export default function Plots() {
             <span className="w-10 h-px bg-gradient-to-l from-transparent to-gold-400/60"></span>
           </div>
           <h2 className="font-serif font-light text-cream text-[clamp(28px,3.5vw,42px)] leading-[1.1]">
-            Choose Your <span className="text-gold-300">Canvas</span>
+            Choose Your Ideal <span className="text-gold-300">Wellness Residence</span>
           </h2>
         </motion.div>
 

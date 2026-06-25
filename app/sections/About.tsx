@@ -35,18 +35,18 @@ export default function About() {
 
   // Nature Villa Images
   const villaImages = [
+    // {
+    //   url: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=900&q=80",
+    //   alt: "Luxury villa surrounded by nature",
+    //   label: "Modern Villa with Greenery"
+    // },
     {
-      url: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=900&q=80",
-      alt: "Luxury villa surrounded by nature",
-      label: "Modern Villa with Greenery"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=900&q=80",
+      url: "/images/new_1.png",
       alt: "Premium villa in natural setting",
       label: "Villa Amidst Nature"
     },
     {
-      url: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=80",
+      url: "/images/new_2.png",
       alt: "Villa with lush garden",
       label: "Garden Villa"
     },

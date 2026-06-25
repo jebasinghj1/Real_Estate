@@ -382,19 +382,20 @@ const EASE_LUXE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 // Premium Background Images
 const premiumImages = [
   {
-    url: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1800&q=80",
+    url : "/images/plot_m1.png",
     alt: "Luxury modern villa with pool"
   },
   {
-    url: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1800&q=80",
+    // url: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1800&q=80",
+    url : "/images/plot_m2.png",
     alt: "Premium luxury home exterior"
   },
   {
-    url: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1800&q=80",
+    url: "/images/plot_m5.png",
     alt: "Modern luxury villa architecture"
   },
   {
-    url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&q=80",
+    url: "/images/plot_m4.png",
     alt: "Premium villa with garden"
   }
 ];

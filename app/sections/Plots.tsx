@@ -14,7 +14,7 @@ const plots = [
     size: "1,800 – 3,600 sq.ft",
     price: "₹1 Cr",
     tag: "Entry",
-     img: "/images/plot_1.png",
+     img: "/images/now_2.png",
     features: ["Tree-lined boundary", "Corner plots available"],
     label: "Luxury Villa with Garden"
   },
@@ -23,20 +23,20 @@ const plots = [
     size: "3,601 – 7,200 sq.ft",
     price: "₹2.4 Cr",
     tag: "Popular",
-    img: "/images/plot_2.png",
+    img: "/images/now_1.png",
     features: ["Park-facing options", "Wide 30ft road access"],
     featured: true,
     label: "Modern Villa with Pool"
   },
-  {
-    type: "Estate Plot",
-    size: "7,201 – 10,800 sq.ft",
-    price: "₹4.8 Cr",
-    tag: "Exclusive",
-    img: "/images/plot_3.png",
-    features: ["Private garden zone", "Pond-view orientation"],
-    label: "Villa Amidst Nature"
-  },
+{
+  type: "Estate Plot",
+  size: "7,201 – 10,800 sq.ft",
+  price: "₹4.8 Cr",
+  tag: "Exclusive",
+  img: "/images/new_1.png", // ✅ correct
+  features: ["Private garden zone", "Pond-view orientation"],
+  label: "Villa Amidst Nature"
+},
 ];
 
 // Card Component with its own scroll animation
